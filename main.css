@@ -5,13 +5,12 @@ html {
     font-family: Alegreya, serif;
     -webkit-text-size-adjust: 100%;
     color:rgba(100,50,20,1);
-    background:rgba(100,50,20,1);
 }
 
 body {
     margin: 0;
     min-height: 100%;
-    background:white
+    background:white;
 }
 
 *, *:after, *:before {
@@ -20,10 +19,11 @@ body {
 }
 
 ::selection {
-    background: rgba(100,50,20,1);
+    background: rgba(100,50,20,0.1);
 }
 
-h1, h2, p {
+
+h1, h2, h3, p {
     margin: 0;
     text-align: center;
 }
@@ -36,6 +36,14 @@ h1 {
     font-weight: 600;
     font-size: 50px;
     line-height: 60px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px; 
+    margin-bottom: 30px;
 }
 
 em {
@@ -44,6 +52,7 @@ em {
     line-height: 25px;
     font-style: normal;
     display: block;
+    margin-bottom: -10px;
 }
 
 p {
@@ -59,16 +68,19 @@ p i {
     font-weight: 500;
 }
 
-h2 {
+h3 {
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
 }
 
 a {
+    font-style: italic;
+    font-weight: 600;
     text-decoration: none;
     color: inherit;
     transition: all 0.3s ease;
+    color: rgba(100,50,20,1);
 }
 
 a:hover, a:focus {
@@ -79,7 +91,7 @@ a:active {
     color: rgba(100,50,20,1);
 }
 
-h2 i {
+h3 i {
     font-style: normal;
     font-size: 0.75em;
     font-weight: 600;
@@ -138,4 +150,3 @@ img {
         margin-bottom: 100px;
     }
 }
-
