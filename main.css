@@ -1,16 +1,17 @@
 html {
-    background: white;
     height: 100%;
     line-height: 25px;
     font-size: 20px;
     font-family: Alegreya, serif;
     -webkit-text-size-adjust: 100%;
     color:rgba(100,50,20,1);
+    background:rgba(100,50,20,1);
 }
 
 body {
     margin: 0;
     min-height: 100%;
+    background:white
 }
 
 *, *:after, *:before {
@@ -22,26 +23,119 @@ body {
     background: rgba(100,50,20,1);
 }
 
-h1, h2, h3, p {
+h1, h2, p {
     margin: 0;
+    text-align: center;
+}
+
+b {
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+em {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+    font-style: normal;
+    display: block;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 50ch;
+}
+
+p i {
+    font-style: normal;
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: rgba(100,50,20,0.65);
+}
+
+a:active {
+    color: rgba(100,50,20,1);
+}
+
+h2 i {
+    font-style: normal;
+    font-size: 0.75em;
+    font-weight: 600;
+    position: relative;
+    top: -0.25em;
+}
+
+div {
+    margin-bottom: 50px;;
 }
 
 main {
-    margin: 30px;
-    
+    margin: 0 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
+
 @media (min-width: 600px) {
     main {
-        margin: 50px;
+        margin: 0 50px 50px;
     }
 }
 @media (min-width: 800px) {
     main {
-        margin: 80px;
+        margin: 0 80px 80px;
     }
 }
 @media (min-width: 1000px) {
     main {
-        margin: 100px;
+        margin: 0 100px 100px;
     }
 }
+
+img {
+    width: 100px;
+    height: auto;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 600px) {
+    img {
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 800px) {
+    img {
+        margin-bottom: 80px;
+    }
+}
+@media (min-width: 1000px) {
+    img {
+        margin-bottom: 100px;
+    }
+}
+
