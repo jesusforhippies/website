@@ -79,7 +79,7 @@ a {
     font-weight: 600;
     text-decoration: none;
     color: inherit;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     color: rgba(100,50,20,1);
 }
 
